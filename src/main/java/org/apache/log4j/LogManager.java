@@ -5,9 +5,9 @@
  * The ASF licenses this file to You under the Apache License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -37,142 +37,153 @@ import java.io.PrintWriter;
 
 /**
  * Gets {@link Logger} instances and operates on the current {@link LoggerRepository}.
- * 
+ *
  * <p>
  * When the <code>LogManager</code> class is loaded into memory the default initialization procedure runs. The default initialization
  * procedure</a> is described in the <a href="../../../../manual.html#defaultInit">short log4j manual</a>.
  * </p>
- * 
+ *
  * @author Ceki G&uuml;lc&uuml;
  */
 public class LogManager {
 
-  /**
-   * @deprecated This variable is for internal use only. It will
-   * become package protected in future versions.
-   * */
-  static public final String DEFAULT_CONFIGURATION_FILE = "log4j.properties";
-  
-  static final String DEFAULT_XML_CONFIGURATION_FILE = "log4j.xml";  
-   
-  /**
-   * @deprecated This variable is for internal use only. It will
-   * become private in future versions.
-   * */
-  static final public String DEFAULT_CONFIGURATION_KEY="log4j.configuration";
+    /**
+     * 默认的配置文件名称：log4j.properties
+     * xml格式的名称：log4j.xml
+     */
+    static public final String DEFAULT_CONFIGURATION_FILE = "log4j.properties";
 
-  /**
-   * @deprecated This variable is for internal use only. It will
-   * become private in future versions.
-   * */
-  static final public String CONFIGURATOR_CLASS_KEY="log4j.configuratorClass";
+    static final String DEFAULT_XML_CONFIGURATION_FILE = "log4j.xml";
 
-  /**
-  * @deprecated This variable is for internal use only. It will
-  * become private in future versions.
-  */
-  public static final String DEFAULT_INIT_OVERRIDE_KEY = 
-                                                 "log4j.defaultInitOverride";
+    /**
+     * @deprecated This variable is for internal use only. It will
+     * become private in future versions.
+     */
+    static final public String DEFAULT_CONFIGURATION_KEY = "log4j.configuration";
+
+    /**
+     * @deprecated This variable is for internal use only. It will
+     * become private in future versions.
+     */
+    static final public String CONFIGURATOR_CLASS_KEY = "log4j.configuratorClass";
+
+    /**
+     * 默认初始化数据重载的配置
+     * 该字段的用途未发现
+     */
+    public static final String DEFAULT_INIT_OVERRIDE_KEY =
+            "log4j.defaultInitOverride";
 
 
-  static private Object guard = null;
-  static private RepositorySelector repositorySelector;
+    static private Object guard = null;
+    static private RepositorySelector repositorySelector;
 
-  static {
-    // By default we use a DefaultRepositorySelector which always returns 'h'.
-    Hierarchy h = new Hierarchy(new RootLogger(Level.DEBUG));
-    repositorySelector = new DefaultRepositorySelector(h);
+    static {
+        // By default we use a DefaultRepositorySelector which always returns 'h'.
+        /*
+            新建日志容器对象，设置根日志，级别为debug
+         */
+        Hierarchy h = new Hierarchy(new RootLogger(Level.DEBUG));
 
-    /** Search for the properties file log4j.properties in the CLASSPATH.  */
-    String override =OptionConverter.getSystemProperty(DEFAULT_INIT_OVERRIDE_KEY,
-						       null);
+        // 日志容器选择器，通过该接口实现类，选择日志框架所用的日志容器，这里是简单实现
+        repositorySelector = new DefaultRepositorySelector(h);
 
-    // if there is no default init override, then get the resource
-    // specified by the user or the default config file.
-    if(override == null || "false".equalsIgnoreCase(override)) {
+        /** Search for the properties file log4j.properties in the CLASSPATH.  */
+        // 从系统配置中查找 “log4j.defaultInitOverride”的配置，如果没有，则为null
+        String override = OptionConverter.getSystemProperty(DEFAULT_INIT_OVERRIDE_KEY,
+                null);
 
-      String configurationOptionStr = OptionConverter.getSystemProperty(
-							  DEFAULT_CONFIGURATION_KEY, 
-							  null);
+        // if there is no default init override, then get the resource
+        // specified by the user or the default config file.
+        if (override == null || "false".equalsIgnoreCase(override)) {
 
-      String configuratorClassName = OptionConverter.getSystemProperty(
-                                                   CONFIGURATOR_CLASS_KEY, 
-						   null);
+            // 系统配置获取日志配置字符串
+            String configurationOptionStr = OptionConverter.getSystemProperty(
+                    DEFAULT_CONFIGURATION_KEY,
+                    null);
 
-      URL url = null;
+            // 系统配置获取上面配置对应的解析类的全限定名，用来解析配置，这是个性自定义配置方式和加载相应解析代码的地方
+            String configuratorClassName = OptionConverter.getSystemProperty(
+                    CONFIGURATOR_CLASS_KEY,
+                    null);
 
-      // if the user has not specified the log4j.configuration
-      // property, we search first for the file "log4j.xml" and then
-      // "log4j.properties"
-      if(configurationOptionStr == null) {	
-	url = Loader.getResource(DEFAULT_XML_CONFIGURATION_FILE);
-	if(url == null) {
-	  url = Loader.getResource(DEFAULT_CONFIGURATION_FILE);
-	}
-      } else {
-	try {
-	  url = new URL(configurationOptionStr);
-	} catch (MalformedURLException ex) {
-	  // so, resource is not a URL:
-	  // attempt to get the resource from the class path
-	  url = Loader.getResource(configurationOptionStr); 
-	}	
-      }
-      
-      // If we have a non-null url, then delegate the rest of the
-      // configuration to the OptionConverter.selectAndConfigure
-      // method.
-      if(url != null) {
-	    LogLog.debug("Using URL ["+url+"] for automatic log4j configuration.");
-        try {
-            OptionConverter.selectAndConfigure(url, configuratorClassName,
-					   LogManager.getLoggerRepository());
-        } catch (NoClassDefFoundError e) {
-            LogLog.warn("Error during default initialization", e);
+            URL url = null;
+
+            // if the user has not specified the log4j.configuration
+            // property, we search first for the file "log4j.xml" and then
+            // "log4j.properties"
+
+            // 根据默认的配置名称获取配置URL，一般默认使用log4j.properties的名字
+            if (configurationOptionStr == null) {
+                url = Loader.getResource(DEFAULT_XML_CONFIGURATION_FILE);
+                if (url == null) {
+                    url = Loader.getResource(DEFAULT_CONFIGURATION_FILE);
+                }
+            } else {
+                try {
+                    url = new URL(configurationOptionStr);
+                } catch (MalformedURLException ex) {
+                    // so, resource is not a URL:
+                    // attempt to get the resource from the class path
+                    url = Loader.getResource(configurationOptionStr);
+                }
+            }
+
+            // If we have a non-null url, then delegate the rest of the
+            // configuration to the OptionConverter.selectAndConfigure
+            // method.
+            if (url != null) {
+                LogLog.debug("Using URL [" + url + "] for automatic log4j configuration.");
+                try {
+                    // 核心步骤，根据配置文件路径，选择解析类并进行配置解析，最终启动日志框架
+                    OptionConverter.selectAndConfigure(url, configuratorClassName,
+                            LogManager.getLoggerRepository());
+                } catch (NoClassDefFoundError e) {
+                    LogLog.warn("Error during default initialization", e);
+                }
+            } else {
+                LogLog.debug("Could not find resource: [" + configurationOptionStr + "].");
+            }
+        } else {
+            LogLog.debug("Default initialization of overridden by " +
+                    DEFAULT_INIT_OVERRIDE_KEY + "property.");
         }
-      } else {
-	    LogLog.debug("Could not find resource: ["+configurationOptionStr+"].");
-      }
-    } else {
-        LogLog.debug("Default initialization of overridden by " + 
-            DEFAULT_INIT_OVERRIDE_KEY + "property."); 
-    }  
-  } 
-
-  /**
-     Sets <code>LoggerFactory</code> but only if the correct
-     <em>guard</em> is passed as parameter.
-     
-     <p>Initally the guard is null.  If the guard is
-     <code>null</code>, then invoking this method sets the logger
-     factory and the guard. Following invocations will throw a {@link
-     IllegalArgumentException}, unless the previously set
-     <code>guard</code> is passed as the second parameter.
-
-     <p>This allows a high-level component to set the {@link
-     RepositorySelector} used by the <code>LogManager</code>.
-     
-     <p>For example, when tomcat starts it will be able to install its
-     own repository selector. However, if and when Tomcat is embedded
-     within JBoss, then JBoss will install its own repository selector
-     and Tomcat will use the repository selector set by its container,
-     JBoss.  */
-  static
-  public
-  void setRepositorySelector(RepositorySelector selector, Object guard) 
-                                                 throws IllegalArgumentException {
-    if((LogManager.guard != null) && (LogManager.guard != guard)) {
-      throw new IllegalArgumentException(
-           "Attempted to reset the LoggerFactory without possessing the guard.");
     }
 
-    if(selector == null) {
-      throw new IllegalArgumentException("RepositorySelector must be non-null.");
-    }
+    /**
+     * Sets <code>LoggerFactory</code> but only if the correct
+     * <em>guard</em> is passed as parameter.
+     *
+     * <p>Initally the guard is null.  If the guard is
+     * <code>null</code>, then invoking this method sets the logger
+     * factory and the guard. Following invocations will throw a {@link
+     * IllegalArgumentException}, unless the previously set
+     * <code>guard</code> is passed as the second parameter.
+     *
+     * <p>This allows a high-level component to set the {@link
+     * RepositorySelector} used by the <code>LogManager</code>.
+     *
+     * <p>For example, when tomcat starts it will be able to install its
+     * own repository selector. However, if and when Tomcat is embedded
+     * within JBoss, then JBoss will install its own repository selector
+     * and Tomcat will use the repository selector set by its container,
+     * JBoss.
+     */
+    static
+    public void setRepositorySelector(RepositorySelector selector, Object guard)
+            throws IllegalArgumentException {
+        if ((LogManager.guard != null) && (LogManager.guard != guard)) {
+            throw new IllegalArgumentException(
+                    "Attempted to reset the LoggerFactory without possessing the guard.");
+        }
 
-    LogManager.guard = guard;
-    LogManager.repositorySelector = selector;
-  }
+        if (selector == null) {
+            throw new IllegalArgumentException("RepositorySelector must be non-null.");
+        }
+
+        LogManager.guard = guard;
+        LogManager.repositorySelector = selector;
+    }
 
 
     /**
@@ -184,94 +195,85 @@ public class LogManager {
      * @param ex exception used to determine calling stack.
      * @return true if calling stack is recognized as likely safe.
      */
-  private static boolean isLikelySafeScenario(final Exception ex) {
-      StringWriter stringWriter = new StringWriter();
-      ex.printStackTrace(new PrintWriter(stringWriter));
-      String msg = stringWriter.toString();
-      return msg.indexOf("org.apache.catalina.loader.WebappClassLoader.stop") != -1;
-  }
-
-  static
-  public
-  LoggerRepository getLoggerRepository() {
-    if (repositorySelector == null) {
-        repositorySelector = new DefaultRepositorySelector(new NOPLoggerRepository());
-        guard = null;
-        Exception ex = new IllegalStateException("Class invariant violation");
-        String msg =
-                "log4j called after unloading, see http://logging.apache.org/log4j/1.2/faq.html#unload.";
-        if (isLikelySafeScenario(ex)) {
-            LogLog.debug(msg, ex);
-        } else {
-            LogLog.error(msg, ex);
-        }
+    private static boolean isLikelySafeScenario(final Exception ex) {
+        StringWriter stringWriter = new StringWriter();
+        ex.printStackTrace(new PrintWriter(stringWriter));
+        String msg = stringWriter.toString();
+        return msg.indexOf("org.apache.catalina.loader.WebappClassLoader.stop") != -1;
     }
-    return repositorySelector.getLoggerRepository();
-  }
 
-  /**
-     Retrieve the appropriate root logger.
-   */
-  public
-  static 
-  Logger getRootLogger() {
-     // Delegate the actual manufacturing of the logger to the logger repository.
-    return getLoggerRepository().getRootLogger();
-  }
+    static
+    public LoggerRepository getLoggerRepository() {
+        if (repositorySelector == null) {
+            repositorySelector = new DefaultRepositorySelector(new NOPLoggerRepository());
+            guard = null;
+            Exception ex = new IllegalStateException("Class invariant violation");
+            String msg =
+                    "log4j called after unloading, see http://logging.apache.org/log4j/1.2/faq.html#unload.";
+            if (isLikelySafeScenario(ex)) {
+                LogLog.debug(msg, ex);
+            } else {
+                LogLog.error(msg, ex);
+            }
+        }
+        return repositorySelector.getLoggerRepository();
+    }
 
-  /**
-     Retrieve the appropriate {@link Logger} instance.  
-  */
-  public
-  static 
-  Logger getLogger(final String name) {
-     // Delegate the actual manufacturing of the logger to the logger repository.
-    return getLoggerRepository().getLogger(name);
-  }
+    /**
+     * Retrieve the appropriate root logger.
+     */
+    public
+    static Logger getRootLogger() {
+        // Delegate the actual manufacturing of the logger to the logger repository.
+        return getLoggerRepository().getRootLogger();
+    }
 
- /**
-     Retrieve the appropriate {@link Logger} instance.  
-  */
-  public
-  static 
-  Logger getLogger(final Class clazz) {
-     // Delegate the actual manufacturing of the logger to the logger repository.
-    return getLoggerRepository().getLogger(clazz.getName());
-  }
+    /**
+     * Retrieve the appropriate {@link Logger} instance.
+     */
+    public
+    static Logger getLogger(final String name) {
+        // Delegate the actual manufacturing of the logger to the logger repository.
+        return getLoggerRepository().getLogger(name);
+    }
+
+    /**
+     * Retrieve the appropriate {@link Logger} instance.
+     */
+    public
+    static Logger getLogger(final Class clazz) {
+        // Delegate the actual manufacturing of the logger to the logger repository.
+        return getLoggerRepository().getLogger(clazz.getName());
+    }
 
 
-  /**
-     Retrieve the appropriate {@link Logger} instance.  
-  */
-  public
-  static 
-  Logger getLogger(final String name, final LoggerFactory factory) {
-     // Delegate the actual manufacturing of the logger to the logger repository.
-    return getLoggerRepository().getLogger(name, factory);
-  }  
+    /**
+     * Retrieve the appropriate {@link Logger} instance.
+     */
+    public
+    static Logger getLogger(final String name, final LoggerFactory factory) {
+        // Delegate the actual manufacturing of the logger to the logger repository.
+        return getLoggerRepository().getLogger(name, factory);
+    }
 
-  public
-  static
-  Logger exists(final String name) {
-    return getLoggerRepository().exists(name);
-  }
+    public
+    static Logger exists(final String name) {
+        return getLoggerRepository().exists(name);
+    }
 
-  public
-  static
-  Enumeration getCurrentLoggers() {
-    return getLoggerRepository().getCurrentLoggers();
-  }
+    public
+    static Enumeration getCurrentLoggers() {
+        return getLoggerRepository().getCurrentLoggers();
+    }
 
-  public
-  static
-  void shutdown() {
-    getLoggerRepository().shutdown();
-  }
+    public
+    static void shutdown() {
+        getLoggerRepository().shutdown();
+    }
 
-  public
-  static
-  void resetConfiguration() {
-    getLoggerRepository().resetConfiguration();
-  }
+    public
+    static void resetConfiguration() {
+        getLoggerRepository().resetConfiguration();
+    }
 }
 

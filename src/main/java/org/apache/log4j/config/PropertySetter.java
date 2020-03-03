@@ -5,9 +5,9 @@
  * The ASF licenses this file to You under the Apache License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -38,278 +38,286 @@ import java.util.Enumeration;
 import java.util.Properties;
 
 /**
-   General purpose Object property setter. Clients repeatedly invokes
-   {@link #setProperty setProperty(name,value)} in order to invoke setters
-   on the Object specified in the constructor. This class relies on the
-   JavaBeans {@link Introspector} to analyze the given Object Class using
-   reflection.
-   
-   <p>Usage:
-   <pre>
-     PropertySetter ps = new PropertySetter(anObject);
-     ps.set("name", "Joe");
-     ps.set("age", "32");
-     ps.set("isMale", "true");
-   </pre>
-   will cause the invocations anObject.setName("Joe"), anObject.setAge(32),
-   and setMale(true) if such methods exist with those signatures.
-   Otherwise an {@link IntrospectionException} are thrown.
-  
-   @author Anders Kristensen
-   @since 1.1
+ * General purpose Object property setter. Clients repeatedly invokes
+ * {@link #setProperty setProperty(name,value)} in order to invoke setters
+ * on the Object specified in the constructor. This class relies on the
+ * JavaBeans {@link Introspector} to analyze the given Object Class using
+ * reflection.
+ *
+ * <p>Usage:
+ * <pre>
+ * PropertySetter ps = new PropertySetter(anObject);
+ * ps.set("name", "Joe");
+ * ps.set("age", "32");
+ * ps.set("isMale", "true");
+ * </pre>
+ * will cause the invocations anObject.setName("Joe"), anObject.setAge(32),
+ * and setMale(true) if such methods exist with those signatures.
+ * Otherwise an {@link IntrospectionException} are thrown.
+ *
+ * @author Anders Kristensen
+ * @since 1.1
  */
 public class PropertySetter {
-  protected Object obj;
-  protected PropertyDescriptor[] props;
-  
-  /**
-    Create a new PropertySetter for the specified Object. This is done
-    in prepartion for invoking {@link #setProperty} one or more times.
-    
-    @param obj  the object for which to set properties
-   */
-  public
-  PropertySetter(Object obj) {
-    this.obj = obj;
-  }
-  
-  /**
-     Uses JavaBeans {@link Introspector} to computer setters of object to be
-     configured.
-   */
-  protected
-  void introspect() {
-    try {
-      BeanInfo bi = Introspector.getBeanInfo(obj.getClass());
-      props = bi.getPropertyDescriptors();
-    } catch (IntrospectionException ex) {
-      LogLog.error("Failed to introspect "+obj+": " + ex.getMessage());
-      props = new PropertyDescriptor[0];
+    protected Object obj;
+    protected PropertyDescriptor[] props;
+
+    /**
+     * Create a new PropertySetter for the specified Object. This is done
+     * in prepartion for invoking {@link #setProperty} one or more times.
+     *
+     * @param obj the object for which to set properties
+     */
+    public PropertySetter(Object obj) {
+        this.obj = obj;
     }
-  }
-  
 
-  /**
-     Set the properties of an object passed as a parameter in one
-     go. The <code>properties</code> are parsed relative to a
-     <code>prefix</code>.
-
-     @param obj The object to configure.
-     @param properties A java.util.Properties containing keys and values.
-     @param prefix Only keys having the specified prefix will be set.
-  */
-  public
-  static
-  void setProperties(Object obj, Properties properties, String prefix) {
-    new PropertySetter(obj).setProperties(properties, prefix);
-  }
-  
-
-  /**
-     Set the properites for the object that match the
-     <code>prefix</code> passed as parameter.
-
-     
-   */
-  public
-  void setProperties(Properties properties, String prefix) {
-    int len = prefix.length();
-    
-    for (Enumeration e = properties.propertyNames(); e.hasMoreElements(); ) {
-      String key = (String) e.nextElement();
-      
-      // handle only properties that start with the desired frefix.
-      if (key.startsWith(prefix)) {
-
-	
-	// ignore key if it contains dots after the prefix
-        if (key.indexOf('.', len + 1) > 0) {
-	  //System.err.println("----------Ignoring---["+key
-	  //	     +"], prefix=["+prefix+"].");
-	  continue;
-	}
-        
-	String value = OptionConverter.findAndSubst(key, properties);
-        key = key.substring(len);
-        if (("layout".equals(key) || "errorhandler".equals(key)) && obj instanceof Appender) {
-          continue;
+    /**
+     * Uses JavaBeans {@link Introspector} to computer setters of object to be
+     * configured.
+     */
+    protected void introspect() {
+        try {
+            BeanInfo bi = Introspector.getBeanInfo(obj.getClass());
+            props = bi.getPropertyDescriptors();
+        } catch (IntrospectionException ex) {
+            LogLog.error("Failed to introspect " + obj + ": " + ex.getMessage());
+            props = new PropertyDescriptor[0];
         }
-        //
-        //   if the property type is an OptionHandler
-        //     (for example, triggeringPolicy of org.apache.log4j.rolling.RollingFileAppender)
-        PropertyDescriptor prop = getPropertyDescriptor(Introspector.decapitalize(key));
-        if (prop != null
-                && OptionHandler.class.isAssignableFrom(prop.getPropertyType())
-                && prop.getWriteMethod() != null) {
-            OptionHandler opt = (OptionHandler)
-                    OptionConverter.instantiateByKey(properties, prefix + key,
-                                  prop.getPropertyType(),
-                                  null);
-            PropertySetter setter = new PropertySetter(opt);
-            setter.setProperties(properties, prefix + key + ".");
-            try {
-                prop.getWriteMethod().invoke(this.obj, new Object[] { opt });
-            } catch(IllegalAccessException ex) {
-                LogLog.warn("Failed to set property [" + key +
-                            "] to value \"" + value + "\". ", ex);
-            } catch(InvocationTargetException ex) {
-                if (ex.getTargetException() instanceof InterruptedException
-                        || ex.getTargetException() instanceof InterruptedIOException) {
-                    Thread.currentThread().interrupt();
+    }
+
+
+    /**
+     * Set the properties of an object passed as a parameter in one
+     * go. The <code>properties</code> are parsed relative to a
+     * <code>prefix</code>.
+     *
+     * @param obj        The object to configure.
+     * @param properties A java.util.Properties containing keys and values.
+     * @param prefix     Only keys having the specified prefix will be set.
+     */
+    public
+    static void setProperties(Object obj, Properties properties, String prefix) {
+        new PropertySetter(obj).setProperties(properties, prefix);
+    }
+
+
+    /**
+     * Set the properites for the object that match the
+     * <code>prefix</code> passed as parameter.
+     */
+    public void setProperties(Properties properties, String prefix) {
+        int len = prefix.length();
+
+        for (Enumeration e = properties.propertyNames(); e.hasMoreElements(); ) {
+            String key = (String) e.nextElement();
+
+            // handle only properties that start with the desired frefix.
+            // 只处理以指定前缀开头的配置值
+            if (key.startsWith(prefix)) {
+
+                // ignore key if it contains dots after the prefix
+                // 从指定前缀之后开始，如果key还有.分割，就不处理。这里主要是逐级解析
+                // 比如appender的解析值有单值属性，也有对象属性，对象通过.字段的方式继续配置其值，如果从前缀以后还有.则不处理
+                // log4j.appender的前缀只处理log4j.appender.level，不能处理log4j.appender.layout.pattern
+                if (key.indexOf('.', len + 1) > 0) {
+                    //System.err.println("----------Ignoring---["+key
+                    //	     +"], prefix=["+prefix+"].");
+                    continue;
                 }
-                LogLog.warn("Failed to set property [" + key +
-                            "] to value \"" + value + "\". ", ex);
-            } catch(RuntimeException ex) {
-                LogLog.warn("Failed to set property [" + key +
-                            "] to value \"" + value + "\". ", ex);
+
+                String value = OptionConverter.findAndSubst(key, properties);
+                key = key.substring(len);
+                // 如果是对appender设置属性，设置的属性值是layout和errorhandler的话直接跳过，这个在外层已经设置了
+                if (("layout".equals(key) || "errorhandler".equals(key)) && obj instanceof Appender) {
+                    continue;
+                }
+                //
+                //   if the property type is an OptionHandler
+                //     (for example, triggeringPolicy of org.apache.log4j.rolling.RollingFileAppender)
+                // 通过内省的方式设置属性值
+                PropertyDescriptor prop = getPropertyDescriptor(Introspector.decapitalize(key));
+                if (prop != null
+                        && OptionHandler.class.isAssignableFrom(prop.getPropertyType())
+                        && prop.getWriteMethod() != null) {
+                    OptionHandler opt = (OptionHandler)
+                            OptionConverter.instantiateByKey(properties, prefix + key,
+                                    prop.getPropertyType(),
+                                    null);
+                    PropertySetter setter = new PropertySetter(opt);
+                    setter.setProperties(properties, prefix + key + ".");
+                    try {
+                        prop.getWriteMethod().invoke(this.obj, new Object[]{opt});
+                    } catch (IllegalAccessException ex) {
+                        LogLog.warn("Failed to set property [" + key +
+                                "] to value \"" + value + "\". ", ex);
+                    } catch (InvocationTargetException ex) {
+                        if (ex.getTargetException() instanceof InterruptedException
+                                || ex.getTargetException() instanceof InterruptedIOException) {
+                            Thread.currentThread().interrupt();
+                        }
+                        LogLog.warn("Failed to set property [" + key +
+                                "] to value \"" + value + "\". ", ex);
+                    } catch (RuntimeException ex) {
+                        LogLog.warn("Failed to set property [" + key +
+                                "] to value \"" + value + "\". ", ex);
+                    }
+                    continue;
+                }
+                // 设置属性值
+                setProperty(key, value);
             }
-            continue;
         }
 
-        setProperty(key, value);
-      }
+        // 激活选项配置
+        activate();
     }
-    activate();
-  }
-  
-  /**
-     Set a property on this PropertySetter's Object. If successful, this
-     method will invoke a setter method on the underlying Object. The
-     setter is the one for the specified property name and the value is
-     determined partly from the setter argument type and partly from the
-     value specified in the call to this method.
-     
-     <p>If the setter expects a String no conversion is necessary.
-     If it expects an int, then an attempt is made to convert 'value'
-     to an int using new Integer(value). If the setter expects a boolean,
-     the conversion is by new Boolean(value).
-     
-     @param name    name of the property
-     @param value   String value of the property
-   */
-  public
-  void setProperty(String name, String value) {
-    if (value == null) {
-        return;
-    }
-    
-    name = Introspector.decapitalize(name);
-    PropertyDescriptor prop = getPropertyDescriptor(name);
-    
-    //LogLog.debug("---------Key: "+name+", type="+prop.getPropertyType());
 
-    if (prop == null) {
-      LogLog.warn("No such property [" + name + "] in "+
-		  obj.getClass().getName()+"." );
-    } else {
-      try {
-        setProperty(prop, name, value);
-      } catch (PropertySetterException ex) {
-        LogLog.warn("Failed to set property [" + name +
-                    "] to value \"" + value + "\". ", ex.rootCause);
-      }
-    }
-  }
-  
-  /** 
-      Set the named property given a {@link PropertyDescriptor}.
+    /**
+     * Set a property on this PropertySetter's Object. If successful, this
+     * method will invoke a setter method on the underlying Object. The
+     * setter is the one for the specified property name and the value is
+     * determined partly from the setter argument type and partly from the
+     * value specified in the call to this method.
+     *
+     * <p>If the setter expects a String no conversion is necessary.
+     * If it expects an int, then an attempt is made to convert 'value'
+     * to an int using new Integer(value). If the setter expects a boolean,
+     * the conversion is by new Boolean(value).
+     *
+     * @param name  name of the property
+     * @param value String value of the property
+     */
+    public void setProperty(String name, String value) {
+        if (value == null) {
+            return;
+        }
 
-      @param prop A PropertyDescriptor describing the characteristics
-      of the property to set.
-      @param name The named of the property to set.
-      @param value The value of the property.      
-   */
-  public
-  void setProperty(PropertyDescriptor prop, String name, String value)
-    throws PropertySetterException {
-    Method setter = prop.getWriteMethod();
-    if (setter == null) {
-      throw new PropertySetterException("No setter for property ["+name+"].");
-    }
-    Class[] paramTypes = setter.getParameterTypes();
-    if (paramTypes.length != 1) {
-      throw new PropertySetterException("#params for setter != 1");
-    }
-    
-    Object arg;
-    try {
-      arg = convertArg(value, paramTypes[0]);
-    } catch (Throwable t) {
-      throw new PropertySetterException("Conversion to type ["+paramTypes[0]+
-					"] failed. Reason: "+t);
-    }
-    if (arg == null) {
-      throw new PropertySetterException(
-          "Conversion to type ["+paramTypes[0]+"] failed.");
-    }
-    LogLog.debug("Setting property [" + name + "] to [" +arg+"].");
-    try {
-      setter.invoke(obj, new Object[]  { arg });
-    } catch (IllegalAccessException ex) {
-      throw new PropertySetterException(ex);
-    } catch (InvocationTargetException ex) {
-        if (ex.getTargetException() instanceof InterruptedException
-                || ex.getTargetException() instanceof InterruptedIOException) {
-            Thread.currentThread().interrupt();
-        }        
-        throw new PropertySetterException(ex);
-    } catch (RuntimeException ex) {
-      throw new PropertySetterException(ex);
-    }
-  }
-  
+        name = Introspector.decapitalize(name);
+        PropertyDescriptor prop = getPropertyDescriptor(name);
 
-  /**
-     Convert <code>val</code> a String parameter to an object of a
-     given type.
-  */
-  protected
-  Object convertArg(String val, Class type) {
-    if(val == null) {
+        //LogLog.debug("---------Key: "+name+", type="+prop.getPropertyType());
+
+        if (prop == null) {
+            LogLog.warn("No such property [" + name + "] in " +
+                    obj.getClass().getName() + ".");
+        } else {
+            try {
+                setProperty(prop, name, value);
+            } catch (PropertySetterException ex) {
+                LogLog.warn("Failed to set property [" + name +
+                        "] to value \"" + value + "\". ", ex.rootCause);
+            }
+        }
+    }
+
+    /**
+     * Set the named property given a {@link PropertyDescriptor}.
+     *
+     * @param prop  A PropertyDescriptor describing the characteristics
+     *              of the property to set.
+     * @param name  The named of the property to set.
+     * @param value The value of the property.
+     */
+    public void setProperty(PropertyDescriptor prop, String name, String value)
+            throws PropertySetterException {
+        // 获取字段对应的setter方法
+        Method setter = prop.getWriteMethod();
+        if (setter == null) {
+            throw new PropertySetterException("No setter for property [" + name + "].");
+        }
+
+        // 检查字段设置参数梳理，一般字段的setter参数只有1个，不是1个就报错
+        Class[] paramTypes = setter.getParameterTypes();
+        if (paramTypes.length != 1) {
+            throw new PropertySetterException("#params for setter != 1");
+        }
+
+        Object arg;
+        try {
+            // 解析参数value，转为setter需要的参数类型
+            arg = convertArg(value, paramTypes[0]);
+        } catch (Throwable t) {
+            throw new PropertySetterException("Conversion to type [" + paramTypes[0] +
+                    "] failed. Reason: " + t);
+        }
+        // 一定有参数值，否则报错
+        if (arg == null) {
+            throw new PropertySetterException(
+                    "Conversion to type [" + paramTypes[0] + "] failed.");
+        }
+        LogLog.debug("Setting property [" + name + "] to [" + arg + "].");
+        try {
+            // 反射设置参数值
+            setter.invoke(obj, new Object[]{arg});
+        } catch (IllegalAccessException ex) {
+            throw new PropertySetterException(ex);
+        } catch (InvocationTargetException ex) {
+            if (ex.getTargetException() instanceof InterruptedException
+                    || ex.getTargetException() instanceof InterruptedIOException) {
+                Thread.currentThread().interrupt();
+            }
+            throw new PropertySetterException(ex);
+        } catch (RuntimeException ex) {
+            throw new PropertySetterException(ex);
+        }
+    }
+
+
+    /**
+     * Convert <code>val</code> a String parameter to an object of a
+     * given type.
+     */
+    protected Object convertArg(String val, Class type) {
+        if (val == null) {
+            return null;
+        }
+        // 以下类型是目前配置中属性设置参数的类型决定的，只有这几种类型
+        String v = val.trim();
+        // 如果是String参数要求，直接返回
+        if (String.class.isAssignableFrom(type)) {
+            return val;
+        } else if (Integer.TYPE.isAssignableFrom(type)) {
+            // int型
+            return new Integer(v);
+        } else if (Long.TYPE.isAssignableFrom(type)) {
+            // long
+            return new Long(v);
+        } else if (Boolean.TYPE.isAssignableFrom(type)) {
+            // 布尔型
+            if ("true".equalsIgnoreCase(v)) {
+                return Boolean.TRUE;
+            } else if ("false".equalsIgnoreCase(v)) {
+                return Boolean.FALSE;
+            }
+        } else if (Priority.class.isAssignableFrom(type)) {
+            // 优先级
+            return OptionConverter.toLevel(v, Level.DEBUG);
+        } else if (ErrorHandler.class.isAssignableFrom(type)) {
+            // 错误处理
+            return OptionConverter.instantiateByClassName(v,
+                    ErrorHandler.class, null);
+        }
         return null;
     }
 
-    String v = val.trim();
-    if (String.class.isAssignableFrom(type)) {
-      return val;
-    } else if (Integer.TYPE.isAssignableFrom(type)) {
-      return new Integer(v);
-    } else if (Long.TYPE.isAssignableFrom(type)) {
-      return new Long(v);
-    } else if (Boolean.TYPE.isAssignableFrom(type)) {
-      if ("true".equalsIgnoreCase(v)) {
-        return Boolean.TRUE;
-      } else if ("false".equalsIgnoreCase(v)) {
-        return Boolean.FALSE;
-      }
-    } else if (Priority.class.isAssignableFrom(type)) {
-      return OptionConverter.toLevel(v, Level.DEBUG);
-    } else if (ErrorHandler.class.isAssignableFrom(type)) {
-      return OptionConverter.instantiateByClassName(v, 
-	  ErrorHandler.class, null);
+
+    protected PropertyDescriptor getPropertyDescriptor(String name) {
+        if (props == null) {
+            introspect();
+        }
+        // 根据字段名称返回特征对象
+        for (int i = 0; i < props.length; i++) {
+            if (name.equals(props[i].getName())) {
+                return props[i];
+            }
+        }
+        return null;
     }
-    return null;
-  }
-  
-  
-  protected
-  PropertyDescriptor getPropertyDescriptor(String name) {
-    if (props == null) {
-        introspect();
+
+    public void activate() {
+        if (obj instanceof OptionHandler) {
+            ((OptionHandler) obj).activateOptions();
+        }
     }
-    
-    for (int i = 0; i < props.length; i++) {
-      if (name.equals(props[i].getName())) {
-	return props[i];
-      }
-    }
-    return null;
-  }
-  
-  public
-  void activate() {
-    if (obj instanceof OptionHandler) {
-      ((OptionHandler) obj).activateOptions();
-    }
-  }
 }

@@ -21,11 +21,15 @@ package org.apache.log4j.spi;
  * java.lang.Throwable (exceptions and errors)
  * into a string representation.
  *
+ * 异常渲染器接口
+ * 渲染消息对象
+ *
  * @since 1.2.16
  */
 public interface ThrowableRenderer {
     /**
      * Render Throwable.
+     *
      * @param t throwable, may not be null.
      * @return String representation.
      */

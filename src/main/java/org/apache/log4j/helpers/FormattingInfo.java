@@ -5,9 +5,9 @@
  * The ASF licenses this file to You under the Apache License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -19,27 +19,29 @@ package org.apache.log4j.helpers;
 
 
 /**
-   FormattingInfo instances contain the information obtained when parsing
-   formatting modifiers in conversion modifiers.
-
-   @author <a href=mailto:jim_cakalic@na.biomerieux.com>Jim Cakalic</a>
-   @author Ceki G&uuml;lc&uuml;
-
-   @since 0.8.2   
+ * FormattingInfo instances contain the information obtained when parsing
+ * formatting modifiers in conversion modifiers.
+ *
+ * 格式信息
+ * 左对齐和最大最小空格设置
+ *
+ * @author <a href=mailto:jim_cakalic@na.biomerieux.com>Jim Cakalic</a>
+ * @author Ceki G&uuml;lc&uuml;
+ * @since 0.8.2
  */
 public class FormattingInfo {
-  int min = -1;
-  int max = 0x7FFFFFFF;
-  boolean leftAlign = false;
+    int min = -1;
+    int max = 0x7FFFFFFF;
+    boolean leftAlign = false;
 
-  void reset() {
-    min = -1;
-    max = 0x7FFFFFFF;
-    leftAlign = false;      
-  }
+    void reset() {
+        min = -1;
+        max = 0x7FFFFFFF;
+        leftAlign = false;
+    }
 
-  void dump() {
-    LogLog.debug("min="+min+", max="+max+", leftAlign="+leftAlign);
-  }
+    void dump() {
+        LogLog.debug("min=" + min + ", max=" + max + ", leftAlign=" + leftAlign);
+    }
 }
  

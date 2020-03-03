@@ -25,14 +25,17 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 /**
- *  No-operation implementation of LoggerRepository which is used when
- *  LogManager.repositorySelector is erroneously nulled during class reloading.
- *  @since 1.2.15
+ * No-operation implementation of LoggerRepository which is used when
+ * LogManager.repositorySelector is erroneously nulled during class reloading.
+ *
+ * 不输出操作的日志容器，不做任何操作处理
+ *
+ * @since 1.2.15
  */
 public final class NOPLoggerRepository implements LoggerRepository {
     /**
      * {@inheritDoc}
-    */
+     */
     public void addHierarchyEventListener(final HierarchyEventListener listener) {
     }
 
@@ -120,7 +123,7 @@ public final class NOPLoggerRepository implements LoggerRepository {
     /**
      * {@inheritDoc}
      */
-    public  void fireAddAppenderEvent(Category logger, Appender appender) {
+    public void fireAddAppenderEvent(Category logger, Appender appender) {
     }
 
     /**

@@ -5,9 +5,9 @@
  * The ASF licenses this file to You under the Apache License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -22,121 +22,129 @@ import org.apache.log4j.spi.ErrorHandler;
 import org.apache.log4j.spi.LoggingEvent;
 
 /**
-   Implement this interface for your own strategies for outputting log
-   statements.
-
-   @author Ceki G&uuml;lc&uuml; 
-*/
+ * Implement this interface for your own strategies for outputting log
+ * statements.
+ *
+ * 输出器
+ *
+ * @author Ceki G&uuml;lc&uuml;
+ */
 public interface Appender {
 
-  /**
-     Add a filter to the end of the filter list.
+    /**
+     * Add a filter to the end of the filter list.
+     *
+     * 过滤器是链式结构，在尾部添加
+     *
+     * @since 0.9.0
+     */
+    void addFilter(Filter newFilter);
 
-     @since 0.9.0
-   */
-  void addFilter(Filter newFilter);
+    /**
+     * Returns the head Filter. The Filters are organized in a linked list
+     * and so all Filters on this Appender are available through the result.
+     *
+     * 获取head过滤器
+     *
+     * @return the head Filter or null, if no Filters are present
+     * @since 1.1
+     */
+    public Filter getFilter();
 
-  /**
-     Returns the head Filter. The Filters are organized in a linked list
-     and so all Filters on this Appender are available through the result.
-     
-     @return the head Filter or null, if no Filters are present
-     @since 1.1
-  */
-  public
-  Filter getFilter();
+    /**
+     * Clear the list of filters by removing all the filters in it.
+     *
+     * @since 0.9.0
+     */
+    public void clearFilters();
 
-  /**
-     Clear the list of filters by removing all the filters in it.
-     
-     @since 0.9.0
-   */
-  public
-  void clearFilters();
+    /**
+     * Release any resources allocated within the appender such as file
+     * handles, network connections, etc.
+     *
+     * <p>It is a programming error to append to a closed appender.
+     *
+     * @since 0.8.4
+     */
+    public void close();
 
-  /**
-     Release any resources allocated within the appender such as file
-     handles, network connections, etc.
-
-     <p>It is a programming error to append to a closed appender.
-
-     @since 0.8.4
-  */
-  public
-  void close();
-  
-  /**
-     Log in <code>Appender</code> specific way. When appropriate,
-     Loggers will call the <code>doAppend</code> method of appender
-     implementations in order to log. */
-  public
-  void doAppend(LoggingEvent event);
-
-
-  /**
-     Get the name of this appender.
-     @return name, may be null.*/
-  public
-  String getName();
+    /**
+     * Log in <code>Appender</code> specific way. When appropriate,
+     * Loggers will call the <code>doAppend</code> method of appender
+     * implementations in order to log.
+     *
+     * 输出，核心方法
+     *
+     */
+    public void doAppend(LoggingEvent event);
 
 
-  /**
-     Set the {@link ErrorHandler} for this appender.
+    /**
+     * Get the name of this appender.
+     *
+     * @return name, may be null.
+     */
+    public String getName();
 
-     @since 0.9.0
-   */
-  public
-  void setErrorHandler(ErrorHandler errorHandler);
 
-  /**
-     Returns the {@link ErrorHandler} for this appender.
+    /**
+     * Set the {@link ErrorHandler} for this appender.
+     *
+     * 设置错误处理器
+     *
+     * @since 0.9.0
+     */
+    public void setErrorHandler(ErrorHandler errorHandler);
 
-     @since 1.1
-   */
-  public
-  ErrorHandler getErrorHandler();
+    /**
+     * Returns the {@link ErrorHandler} for this appender.
+     *
+     * @since 1.1
+     */
+    public ErrorHandler getErrorHandler();
 
-  /**
-     Set the {@link Layout} for this appender.
+    /**
+     * Set the {@link Layout} for this appender.
+     *
+     * 设置样式
+     *
+     * @since 0.8.1
+     */
+    public void setLayout(Layout layout);
 
-     @since 0.8.1
-  */
-  public
-  void setLayout(Layout layout);
+    /**
+     * Returns this appenders layout.
+     *
+     * @since 1.1
+     */
+    public Layout getLayout();
 
-  /**
-     Returns this appenders layout.
-     
-     @since 1.1
-  */
-  public
-  Layout getLayout();
-  
 
-  /**
-     Set the name of this appender. The name is used by other
-     components to identify this appender.
+    /**
+     * Set the name of this appender. The name is used by other
+     * components to identify this appender.
+     *
+     * @since 0.8.1
+     */
+    public void setName(String name);
 
-     @since 0.8.1
-  */
-  public
-  void setName(String name);
-
-  /**
-     Configurators call this method to determine if the appender
-    requires a layout. If this method returns <code>true</code>,
-    meaning that layout is required, then the configurator will
-    configure an layout using the configuration information at its
-    disposal.  If this method returns <code>false</code>, meaning that
-    a layout is not required, then layout configuration will be
-    skipped even if there is available layout configuration
-    information at the disposal of the configurator..
-
-     <p>In the rather exceptional case, where the appender
-     implementation admits a layout but can also work without it, then
-     the appender should return <code>true</code>.
-     
-     @since 0.8.4 */
-  public
-  boolean requiresLayout();
+    /**
+     * Configurators call this method to determine if the appender
+     * requires a layout. If this method returns <code>true</code>,
+     * meaning that layout is required, then the configurator will
+     * configure an layout using the configuration information at its
+     * disposal.  If this method returns <code>false</code>, meaning that
+     * a layout is not required, then layout configuration will be
+     * skipped even if there is available layout configuration
+     * information at the disposal of the configurator..
+     *
+     * <p>In the rather exceptional case, where the appender
+     * implementation admits a layout but can also work without it, then
+     * the appender should return <code>true</code>.
+     *
+     * 是否需要样式，如果是false，则没有layout要求
+     *
+     * @since 0.8.4
+     */
+    public boolean requiresLayout();
 }

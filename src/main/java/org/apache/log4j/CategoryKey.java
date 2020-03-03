@@ -5,9 +5,9 @@
  * The ASF licenses this file to You under the Apache License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -18,37 +18,37 @@
 package org.apache.log4j;
 
 /**
-   CategoryKey is a wrapper for String that apparently accellerated
-   hash table lookup in early JVM's.
-   @author Ceki G&uuml;lc&uuml; 
-*/
+ * CategoryKey is a wrapper for String that apparently accellerated
+ * hash table lookup in early JVM's.
+ *
+ * 该类主要提升logger的name在ht查询的效率
+ * ht遍历元素时，先计算key的hash至，该对象重写了hashCode并提前缓存起来，在ht查找时直接使用，减少了计算key的hashCode的过程
+ *
+ * @author Ceki G&uuml;lc&uuml;
+ */
 class CategoryKey {
 
-  String   name;  
-  int hashCache;
+    String name;
+    int hashCache;
 
-  CategoryKey(String name) {
-    this.name = name;
-    hashCache = name.hashCode();
-  }
-
-  final
-  public  
-  int hashCode() {
-    return hashCache;
-  }
-
-  final
-  public
-  boolean equals(Object rArg) {
-    if(this == rArg) {
-        return true;
+    CategoryKey(String name) {
+        this.name = name;
+        hashCache = name.hashCode();
     }
-    
-    if(rArg != null && CategoryKey.class == rArg.getClass()) {
-        return  name.equals(((CategoryKey)rArg ).name);
-    } else {
-        return false;
+
+    final public int hashCode() {
+        return hashCache;
     }
-  }
+
+    final public boolean equals(Object rArg) {
+        if (this == rArg) {
+            return true;
+        }
+
+        if (rArg != null && CategoryKey.class == rArg.getClass()) {
+            return name.equals(((CategoryKey) rArg).name);
+        } else {
+            return false;
+        }
+    }
 }

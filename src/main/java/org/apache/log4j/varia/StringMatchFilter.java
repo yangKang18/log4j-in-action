@@ -5,9 +5,9 @@
  * The ASF licenses this file to You under the Apache License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -32,91 +32,97 @@ import org.apache.log4j.helpers.OptionConverter;
  * {@link org.apache.log4j.spi.Filter#DENY} is returned. If there is no match, {@link
  * org.apache.log4j.spi.Filter#NEUTRAL} is returned.
  *
+ * 字符串匹配过滤器
+ *
  * @author Ceki G&uuml;lc&uuml;
- * @since 0.9.0 
+ * @since 0.9.0
  */
 public class StringMatchFilter extends Filter {
-  
-  /**
-     @deprecated Options are now handled using the JavaBeans paradigm.
-     This constant is not longer needed and will be removed in the
-     <em>near</em> term.
-   */
-  public static final String STRING_TO_MATCH_OPTION = "StringToMatch";
 
-  /**
-     @deprecated Options are now handled using the JavaBeans paradigm.
-     This constant is not longer needed and will be removed in the
-     <em>near</em> term.
-   */
-  public static final String ACCEPT_ON_MATCH_OPTION = "AcceptOnMatch";
-  
-  boolean acceptOnMatch = true;
-  String stringToMatch;
-  
-  /**
-     @deprecated We now use JavaBeans introspection to configure
-     components. Options strings are no longer needed.
-  */
-  public
-  String[] getOptionStrings() {
-    return new String[] {STRING_TO_MATCH_OPTION, ACCEPT_ON_MATCH_OPTION};
-  }
+    /**
+     * @deprecated Options are now handled using the JavaBeans paradigm.
+     * This constant is not longer needed and will be removed in the
+     * <em>near</em> term.
+     */
+    public static final String STRING_TO_MATCH_OPTION = "StringToMatch";
 
-  /**
-     @deprecated Use the setter method for the option directly instead
-     of the generic <code>setOption</code> method. 
-  */
-  public
-  void setOption(String key, String value) { 
-    
-    if(key.equalsIgnoreCase(STRING_TO_MATCH_OPTION)) {
-      stringToMatch = value;
-    } else if (key.equalsIgnoreCase(ACCEPT_ON_MATCH_OPTION)) {
-      acceptOnMatch = OptionConverter.toBoolean(value, acceptOnMatch);
+    /**
+     * @deprecated Options are now handled using the JavaBeans paradigm.
+     * This constant is not longer needed and will be removed in the
+     * <em>near</em> term.
+     */
+    public static final String ACCEPT_ON_MATCH_OPTION = "AcceptOnMatch";
+
+    /**
+     * 标记-
+     * true-匹配上就通行，默认是匹配上就打印
+     * false-匹配上就拒绝
+     */
+    boolean acceptOnMatch = true;
+
+    /** 待匹配的字符串 */
+    String stringToMatch;
+
+    /**
+     * @deprecated We now use JavaBeans introspection to configure
+     * components. Options strings are no longer needed.
+     */
+    public String[] getOptionStrings() {
+        return new String[]{STRING_TO_MATCH_OPTION, ACCEPT_ON_MATCH_OPTION};
     }
-  }
-  
-  public
-  void setStringToMatch(String s) {
-    stringToMatch = s;
-  }
-  
-  public
-  String getStringToMatch() {
-    return stringToMatch;
-  }
-  
-  public
-  void setAcceptOnMatch(boolean acceptOnMatch) {
-    this.acceptOnMatch = acceptOnMatch;
-  }
-  
-  public
-  boolean getAcceptOnMatch() {
-    return acceptOnMatch;
-  }
 
-  /**
-     Returns {@link Filter#NEUTRAL} is there is no string match.
-   */
-  public
-  int decide(LoggingEvent event) {
-    String msg = event.getRenderedMessage();
+    /**
+     * @deprecated Use the setter method for the option directly instead
+     * of the generic <code>setOption</code> method.
+     */
+    public void setOption(String key, String value) {
 
-    if(msg == null ||  stringToMatch == null) {
-        return Filter.NEUTRAL;
+        // 设置匹配的字符串和打印标记
+        if (key.equalsIgnoreCase(STRING_TO_MATCH_OPTION)) {
+            stringToMatch = value;
+        } else if (key.equalsIgnoreCase(ACCEPT_ON_MATCH_OPTION)) {
+            acceptOnMatch = OptionConverter.toBoolean(value, acceptOnMatch);
+        }
     }
-    
 
-    if( msg.indexOf(stringToMatch) == -1 ) {
-      return Filter.NEUTRAL;
-    } else { // we've got a match
-      if(acceptOnMatch) {
-	return Filter.ACCEPT;
-      } else {
-	return Filter.DENY;
-      }
+    public void setStringToMatch(String s) {
+        stringToMatch = s;
     }
-  }
+
+    public String getStringToMatch() {
+        return stringToMatch;
+    }
+
+    public void setAcceptOnMatch(boolean acceptOnMatch) {
+        this.acceptOnMatch = acceptOnMatch;
+    }
+
+    public boolean getAcceptOnMatch() {
+        return acceptOnMatch;
+    }
+
+    /**
+     * Returns {@link Filter#NEUTRAL} is there is no string match.
+     */
+    public int decide(LoggingEvent event) {
+        // 获取渲染后的日志消息
+        String msg = event.getRenderedMessage();
+
+        // 消息为空或者待匹配的字符串为空，返回中立
+        if (msg == null || stringToMatch == null) {
+            return Filter.NEUTRAL;
+        }
+
+        // 如果日志消息中没有待匹配的字符串，返回中立
+        if (msg.indexOf(stringToMatch) == -1) {
+            return Filter.NEUTRAL;
+        } else { // we've got a match
+            // 匹配上，看匹配执行标记，如果为true则直接通行，false则拒绝打印
+            if (acceptOnMatch) {
+                return Filter.ACCEPT;
+            } else {
+                return Filter.DENY;
+            }
+        }
+    }
 }

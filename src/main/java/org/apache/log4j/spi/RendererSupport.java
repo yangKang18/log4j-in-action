@@ -5,9 +5,9 @@
  * The ASF licenses this file to You under the Apache License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -22,12 +22,22 @@ import org.apache.log4j.or.ObjectRenderer;
 import org.apache.log4j.or.RendererMap;
 
 
+/**
+ * 渲染器支持功能接口
+ */
 public interface RendererSupport {
 
-  public
-  RendererMap getRendererMap();
+    /**
+     * 获取渲染器容器
+     * @return
+     */
+    public RendererMap getRendererMap();
 
-  public
-  void setRenderer(Class renderedClass, ObjectRenderer renderer);
+    /**
+     * 注册一个渲染器
+     * @param renderedClass
+     * @param renderer
+     */
+    public void setRenderer(Class renderedClass, ObjectRenderer renderer);
 
 }

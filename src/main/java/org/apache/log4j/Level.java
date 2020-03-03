@@ -5,9 +5,9 @@
  * The ASF licenses this file to You under the Apache License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -19,6 +19,7 @@
 //                Nicholas Wolff
 
 package org.apache.log4j;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -28,11 +29,13 @@ import java.io.Serializable;
 /**
  * Defines the minimum set of levels recognized by the system, that is <code>OFF</code>, <code>FATAL</code>, <code>ERROR</code>,
  * <code>WARN</code>, <code>INFO</code>, <code>DEBUG</code> and <code>ALL</code>.
- * 
+ *
  * <p>
  * The <code>Level</code> class may be subclassed to define a larger level set.
  * </p>
- * 
+ *
+ * 日志级别
+ *
  * @author Ceki G&uuml;lc&uuml;
  */
 public class Level extends Priority implements Serializable {
@@ -55,7 +58,7 @@ public class Level extends Priority implements Serializable {
 
     /**
      * TRACE level integer value.
-     * 
+     *
      * @since 1.2.12
      */
     public static final int TRACE_INT = 5000;
@@ -92,7 +95,7 @@ public class Level extends Priority implements Serializable {
 
     /**
      * The <code>TRACE</code> Level designates finer-grained informational events than the <code>DEBUG</code level.
-     * 
+     *
      * @since 1.2.12
      */
     public static final Level TRACE = new Level(TRACE_INT, TRACE_NAME, 7);
@@ -133,24 +136,24 @@ public class Level extends Priority implements Serializable {
      */
     public static Level toLevel(int val, Level defaultLevel) {
         switch (val) {
-        case ALL_INT:
-            return ALL;
-        case DEBUG_INT:
-            return Level.DEBUG;
-        case INFO_INT:
-            return Level.INFO;
-        case WARN_INT:
-            return Level.WARN;
-        case ERROR_INT:
-            return Level.ERROR;
-        case FATAL_INT:
-            return Level.FATAL;
-        case OFF_INT:
-            return OFF;
-        case TRACE_INT:
-            return Level.TRACE;
-        default:
-            return defaultLevel;
+            case ALL_INT:
+                return ALL;
+            case DEBUG_INT:
+                return Level.DEBUG;
+            case INFO_INT:
+                return Level.INFO;
+            case WARN_INT:
+                return Level.WARN;
+            case ERROR_INT:
+                return Level.ERROR;
+            case FATAL_INT:
+                return Level.FATAL;
+            case OFF_INT:
+                return OFF;
+            case TRACE_INT:
+                return Level.TRACE;
+            default:
+                return defaultLevel;
         }
     }
 
@@ -199,13 +202,10 @@ public class Level extends Priority implements Serializable {
 
     /**
      * Custom deserialization of Level.
-     * 
-     * @param s
-     *            serialization stream.
-     * @throws IOException
-     *             if IO exception.
-     * @throws ClassNotFoundException
-     *             if class not found.
+     *
+     * @param s serialization stream.
+     * @throws IOException            if IO exception.
+     * @throws ClassNotFoundException if class not found.
      */
     private void readObject(final ObjectInputStream s) throws IOException, ClassNotFoundException {
         s.defaultReadObject();
@@ -219,11 +219,9 @@ public class Level extends Priority implements Serializable {
 
     /**
      * Serialize level.
-     * 
-     * @param s
-     *            serialization stream.
-     * @throws IOException
-     *             if exception during serialization.
+     *
+     * @param s serialization stream.
+     * @throws IOException if exception during serialization.
      */
     private void writeObject(final ObjectOutputStream s) throws IOException {
         s.defaultWriteObject();
@@ -234,10 +232,9 @@ public class Level extends Priority implements Serializable {
 
     /**
      * Resolved deserialized level to one of the stock instances. May be overriden in classes derived from Level.
-     * 
+     *
      * @return resolved object.
-     * @throws ObjectStreamException
-     *             if exception during resolution.
+     * @throws ObjectStreamException if exception during resolution.
      */
     private Object readResolve() throws ObjectStreamException {
         //

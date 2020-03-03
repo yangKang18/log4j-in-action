@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4e204817-1aed-4f77-bf3b-bcb4a55de7a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/contribs/CONTENTS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/CekiGulcu/AppenderTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/CekiGulcu/Transform.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/EirikLygre/DailyFileAppender1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/EirikLygre/mail-2001-01-18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/JamesHouse/LogTextPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/JamesHouse/LogTextPanelExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/JamesHouse/TextPanelAppender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/JamesHouse/mail-2001-01-23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/Jamie Tsao/JMSQueueAppender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/Jamie Tsao/mail-2001-06-20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/JimMoore/LoggingOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/JimMoore/mail-2001-03-12T1326" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/JimMoore/mail-2001-03-12T1454" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/JimMoore/mail-2001-03-13T0646" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/KevinSteppe/CompositeRollingAppender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/KevinSteppe/JDBCTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/KevinSteppe/mail-2001-02-01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/KevinSteppe/mail-2002-03-27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/KitchingSimon/DatagramStringAppender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/KitchingSimon/DatagramStringWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/KitchingSimon/SingleLineTracerPrintWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/KitchingSimon/logconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/KitchingSimon/mail-2001-02-07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/KitchingSimon/udpserver.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/LeosLiterak/TempFileAppender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/LeosLiterak/mail" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/MarkDouglas/Log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/MarkDouglas/SocketNode2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/MarkDouglas/SocketServer2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/MarkDouglas/mail-2001-01-17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/SvenReimers/gui/JListView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/SvenReimers/gui/JTableAppender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/SvenReimers/gui/TextPaneAppender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/SvenReimers/gui/examples/TextPaneAppenderExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/ThomasFenner/JDBCAppender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/ThomasFenner/JDBCConnectionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/ThomasFenner/JDBCIDHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/ThomasFenner/JDBCLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/ThomasFenner/Log4JTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/ThomasFenner/code_example1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/ThomasFenner/code_example2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/ThomasFenner/configfile_example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/VolkerMentzner/HTTPRequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/VolkerMentzner/Log4jRequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/VolkerMentzner/PluggableHTTPServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/VolkerMentzner/RootRequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/VolkerMentzner/UserDialogRequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contribs/VolkerMentzner/mail-03-05-2001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/MyPatternLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/MyPatternParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/NumberCruncher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/NumberCruncherClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/NumberCruncherServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Sort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/SortAlgo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Trivial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/customLevel/XLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/factor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/factor.lcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/InitUsingDefaultConfigurator/InitUsingDefaultConfigurator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/InitUsingLog4JProperties/InitUsingLog4JProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/InitUsingLog4JProperties/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/InitUsingMultipleAppenders/InitUsingMultipleAppenders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/InitUsingMultipleAppenders/example.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/InitUsingPropertiesFile/InitUsingPropertiesFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/InitUsingPropertiesFile/example.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/InitUsingXMLPropertiesFile/InitUsingXMLPropertiesFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/InitUsingXMLPropertiesFile/example.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/UsingLogMonitorAdapter/CustomizedLogLevels.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/UsingLogMonitorAdapter/UsingLogMonitorAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/UsingSocketAppenders/UsingSocketAppenders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/UsingSocketAppenders/socketclient.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/UsingSocketAppenders/socketserver.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/lf5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/mycat.bad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/mycat.good" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/sort1.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/sort2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/sort3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/sort4.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/subclass/MyLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/subclass/MyLoggerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/subclass/MyLoggerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assembly/bin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/changes/changes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Appender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Appender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/AppenderSkeleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/AppenderSkeleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/CategoryKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/CategoryKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/ConsoleAppender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/ConsoleAppender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/DailyRollingFileAppender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/DailyRollingFileAppender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/DefaultCategoryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/DefaultCategoryFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/DefaultThrowableRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/DefaultThrowableRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/FileAppender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/FileAppender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/HTMLLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/HTMLLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Hierarchy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Hierarchy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Layout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Layout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/LogManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/LogManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/PatternLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/PatternLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Priority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/Priority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/PropertyConfigurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/PropertyConfigurator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/ProvisionNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/ProvisionNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/RollingFileAppender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/RollingFileAppender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/SimpleLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/SimpleLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/WriterAppender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/WriterAppender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/config/PropertySetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/config/PropertySetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/AppenderAttachableImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/AppenderAttachableImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/CountingQuietWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/CountingQuietWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/DateLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/DateLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/FormattingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/FormattingInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/LogLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/LogLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/OnlyOnceErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/OnlyOnceErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/OptionConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/OptionConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/PatternConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/PatternConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/PatternParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/PatternParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/QuietWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/QuietWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/or/DefaultRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/or/DefaultRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/or/ObjectRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/or/ObjectRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/or/RendererMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/or/RendererMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/AppenderAttachable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/AppenderAttachable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/Configurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/Configurator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/DefaultRepositorySelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/DefaultRepositorySelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/HierarchyEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/HierarchyEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/LoggerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/LoggerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/LoggerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/LoggerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/LoggingEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/LoggingEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/NOPLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/NOPLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/NOPLoggerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/NOPLoggerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/OptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/OptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/RendererSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/RendererSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/RepositorySelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/RepositorySelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/RootLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/RootLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ThrowableInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ThrowableInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ThrowableRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ThrowableRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ThrowableRendererSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ThrowableRendererSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/DenyAllFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/DenyAllFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/ExternallyRolledFileAppender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/ExternallyRolledFileAppender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/FallbackErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/FallbackErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/LevelMatchFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/LevelMatchFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/LevelRangeFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/LevelRangeFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/NullAppender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/NullAppender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/StringMatchFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/StringMatchFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/log4j/xml/XMLLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/log4j/xml/XMLLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ntdll/EventLogCategories.mc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ntdll/MSG00001.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ntdll/NTEventLogAppender.def" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ntdll/NTEventLogAppender.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ntdll/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ntdll/nteventlog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/ListVsVector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/NOPWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/NewVsSetLen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/NullAppender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/SystemTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/history/FALKNIS.logging" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/history/GIL.logging" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/history/NAPOLI.logging" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/history/TORINO.logging" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/logging" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging100.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging1000.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging101.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging102.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging103.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging104.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging105.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging106.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging107.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging200.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging201.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging202.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging203.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging204.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging205.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging206.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging207.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging220.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging221.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging222.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging223.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging224.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging225.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging226.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging227.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging300.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging301.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging302.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging303.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging304.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging305.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging306.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging307.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/performance/java/org/apache/log4j/performance/xml/logging9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/apt/download.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/apt/index.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/apt/publications.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/apt/roadmap.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/fml/faq.fml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/resources/css/maven-base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/resources/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/resources/images/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/resources/images/ls-logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/resources/images/maven-feather.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/resources/images/od.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/xdoc/building.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/xdoc/manual.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/build.properties.sample" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/RFA1.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/defaultInit3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/fallback1.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/filter1.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/hierarchyThreshold1.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/hierarchyThreshold2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/hierarchyThreshold3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/hierarchyThreshold4.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/hierarchyThreshold5.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/hierarchyThreshold6.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/hierarchyThreshold7.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/hierarchyThreshold8.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout.mdc.1.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout1.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout10.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout11.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout12.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout13.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout14.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout15.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout16.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout4.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout5.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout6.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout7.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout8.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/pattern/enhancedPatternLayout9.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout.mdc.1.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout1.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout10.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout11.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout12.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout13.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout14.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout4.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout5.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout6.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout7.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout8.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/patternLayout9.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/socketServer1.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/socketServer2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/socketServer3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/socketServer4.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/socketServer5.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/socketServer6.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/socketServer7.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/socketServer8.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/DOMTest4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/DOMTest4_A1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/DOMTest4_A2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/DOMTestCase1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/SocketAppenderTestConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/categoryfactory1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/categoryfactory2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/customLevel1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/customLevel2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/customLevel3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/customLevel4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/customLogger1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/customLogger2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/customLogger3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/defaultInit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/fallback1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/loggerfactory1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/smtpAppender1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/testReset.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/xml/throwableRenderer1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/log4j-coding-convention.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/L7D_en_US.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/L7D_fr.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/L7D_fr_CH.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/TestLogSFPatterns.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/org/apache/log4j/TestLogMFPatterns.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/org/apache/log4j/TestLogSFPatterns.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/org/apache/log4j/rewrite/map.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/org/apache/log4j/rewrite/map.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/org/apache/log4j/rewrite/property.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/org/apache/log4j/rewrite/property.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/org/apache/log4j/rewrite/reflection.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/org/apache/log4j/rewrite/reflection.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/run-tests.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/AsyncAppenderTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/CategoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/CoreTestSuite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/DRFATestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/DefaultThrowableRendererTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/EnhancedMyPatternLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/EnhancedPatternLayoutTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/EnhancedPatternLayoutTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/EnhancedThrowableRendererTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/FileAppenderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/HTMLLayoutTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/HierarchyThresholdTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/Last.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/LayoutTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/LevelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/LogCapture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/LogManagerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/LoggerTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/MDCOrderFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/MDCTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/MinimumTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/MyPatternLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/MyPatternParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/PatternLayoutTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/PatternLayoutTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/PriorityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/PropertyConfiguratorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/RFATestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/StressCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/TTCCLayoutTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/TestLogMF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/TestLogSF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/TestLogXF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/VectorAppender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/VectorErrorHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/customLogger/XLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/customLogger/XLoggerTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/defaultInit/TestCase1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/defaultInit/TestCase2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/defaultInit/TestCase3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/defaultInit/TestCase4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/helpers/BoundedFIFOTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/helpers/CyclicBufferTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/helpers/DateLayoutTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/helpers/LogLogTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/helpers/OptionConverterTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/helpers/PatternParserTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/helpers/UtilLoggingLevelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/net/SMTPAppenderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/net/ShortSocketServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/net/SocketAppenderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/net/SocketServerTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/net/SyslogAppenderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/net/TelnetAppenderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/nt/NTEventLogAppenderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/or/ORTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/pattern/CachedDateFormatTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/pattern/FormattingInfoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/pattern/NameAbbreviatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/pattern/Num343PatternConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/pattern/PatternParserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/rewrite/RewriteAppenderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/spi/LocationInfoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/spi/LoggingEventTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/spi/ThrowableInformationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/stressCategory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/stressCategory.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/AbsoluteDateAndTimeFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/AbsoluteTimeFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/Compare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/ControlFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/EnhancedJunitTestRunnerFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/EnhancedLineNumberFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/Filter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/ISO8601Filter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/JunitTestRunnerFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/LineNumberFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/RelativeTimeFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/SerializationTestHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/SunReflectFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/Transformer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/UnexpectedFormatException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/XMLLineAttributeFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/util/XMLTimestampFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/varia/ERFATestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/varia/ErrorHandlerTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/varia/LevelMatchFilterTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/xml/CustomLevelTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/xml/DOMTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/xml/XLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/xml/XMLLayoutTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/java/org/apache/log4j/xml/XMLLayoutTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/sun_checks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/LevelMatchFilter_accept" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/LevelMatchFilter_deny" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/PatternParser_mdc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/customLevel.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/customLevel.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/customLevel.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/customLevel.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/customLogger.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/customLogger.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/dom.A1.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/dom.A1.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/dom.A2.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/dom.A2.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/drfa_blockedRollover.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/fallback1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/hierarchyThreshold.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/hierarchyThreshold.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/hierarchyThreshold.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/hierarchyThreshold.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/hierarchyThreshold.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/hierarchyThreshold.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/hierarchyThreshold.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/hierarchyThreshold.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.mdc.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.mdc.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/pattern/enhancedPatternLayout.throwable" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.mdc.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/patternLayout.mdc.clear" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/prudent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/serialization/exception.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/serialization/info.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/serialization/location.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/serialization/mdc.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/serialization/ndc.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/serialization/simple.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/simple" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/socketServer.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/socketServer.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/socketServer.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/socketServer.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/socketServer.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/socketServer.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/socketServer.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/socketServer.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/ttcc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/xmlLayout.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/xmlLayout.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/xmlLayout.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/xmlLayout.mdc.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/xmlLayout.mdc.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/witness/xmlLayout.null" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="242445925">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="166" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="166" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="12219" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="12219" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/FileAppender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="170" column="9" lean-forward="true" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
+              <folding>
+                <element signature="e#9663#9664#0" expanded="true" />
+                <element signature="e#9721#9722#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/Layout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/PatternLayout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="611">
+              <caret line="507" column="15" lean-forward="true" selection-start-line="507" selection-start-column="15" selection-end-line="507" selection-end-column="15" />
+              <folding>
+                <element signature="e#15361#15362#0" expanded="true" />
+                <element signature="e#15404#15405#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/LoggingEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="535">
+              <caret line="667" column="47" selection-start-line="667" selection-start-column="47" selection-end-line="667" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ThrowableInformation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="573">
+              <caret line="90" column="52" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/DefaultThrowableRenderer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="78" column="32" lean-forward="true" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/LoggingEvent.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/HierarchyEventListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/CategoryKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/Hierarchy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/or/RendererMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/ProvisionNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/AppenderAttachableImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/LoggingEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/or/DefaultRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/or/ObjectRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/Appender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/OptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/OnlyOnceErrorHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/AppenderSkeleton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/NullAppender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/QuietWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/ConsoleAppender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/WriterAppender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/FileAppender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/DailyRollingFileAppender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/CountingQuietWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/RollingFileAppender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/ExternallyRolledFileAppender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/RootLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/RepositorySelector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/DefaultRepositorySelector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/NOPLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/NOPLoggerRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/Logger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ErrorCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ErrorHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/FallbackErrorHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/Filter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/LevelMatchFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/StringMatchFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/DenyAllFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/LevelRangeFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ThrowableRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/DefaultThrowableRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/Priority.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/Level.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/Layout.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/SimpleLayout.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/DateLayout.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/HTMLLayout.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/xml/XMLLayout.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/FormattingInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/PatternLayout.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/PatternConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/PatternParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ThrowableInformation.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/soft/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\soft\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Apache Log4j" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Apache Log4j" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="556" />
+    <option name="y" value="79" />
+    <option name="width" value="1333" />
+    <option name="height" value="997" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="log4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log4j-in-action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log4j-in-action" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log4j-in-action" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log4j-in-action" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log4j-in-action" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="log4j" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="log4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="log4j-in-action" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="log4j" type="462c0819:PsiDirectoryNode" />
+              <item name="spi" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../promotion/promotion-admin-web" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.38" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_Default_(Template)_Project" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57483" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e204817-1aed-4f77-bf3b-bcb4a55de7a7" name="Default Changelist" comment="" />
+      <created>1583054002829</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583054002829</updated>
+      <workItem from="1583054004168" duration="42609000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="42609000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.16756175" />
+      <window_info anchor="bottom" id="Problems" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="right" id="Structure" order="0" visible="true" weight="0.14285715" />
+      <window_info anchor="right" id="Maven Projects" order="1" weight="0.32962668" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32962668" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.29785544" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/RepositorySelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/NOPLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1843">
+          <caret line="121" column="7" lean-forward="true" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/NOPLoggerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/TriggeringEventEvaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/NullWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/DefaultRepositorySelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding>
+            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="e#1071#1072#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ErrorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/FallbackErrorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="112" column="11" lean-forward="true" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
+          <folding>
+            <element signature="e#2264#2265#0" expanded="true" />
+            <element signature="e#2309#2310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/StringMatchFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="121" column="37" lean-forward="true" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
+          <folding>
+            <element signature="e#2946#2947#0" expanded="true" />
+            <element signature="e#2973#2974#0" expanded="true" />
+            <element signature="e#3015#3016#0" expanded="true" />
+            <element signature="e#3045#3046#0" expanded="true" />
+            <element signature="e#3106#3107#0" expanded="true" />
+            <element signature="e#3150#3151#0" expanded="true" />
+            <element signature="e#3193#3194#0" expanded="true" />
+            <element signature="e#3223#3224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/DenyAllFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/LevelMatchFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="47" selection-start-line="47" selection-end-line="49" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/varia/LevelRangeFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1367">
+          <caret line="97" column="27" lean-forward="true" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="61" column="14" lean-forward="true" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/soft/jdk1.8/src.zip!/java/io/LineNumberReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="70" column="11" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
+          <folding>
+            <element signature="e#1741#1742#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/soft/jdk1.8/src.zip!/java/io/PrintWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="71" column="45" lean-forward="true" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/soft/jdk1.8/src.zip!/java/io/StringWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2641">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/EnhancedThrowableRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ThrowableRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/FileAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="170" column="9" lean-forward="true" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
+          <folding>
+            <element signature="e#9663#9664#0" expanded="true" />
+            <element signature="e#9721#9722#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="76" column="54" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/Priority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/LogXF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5435">
+          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/MDC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/NDC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5720">
+          <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/LogMF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3553">
+          <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/LogSF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/soft/jdk1.8/src.zip!/java/lang/StringBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="666" column="31" selection-start-line="666" selection-start-column="31" selection-end-line="666" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/SimpleLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="64" column="37" lean-forward="true" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/TTCCLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-494">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/pattern/CachedDateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1901">
+          <caret line="231" column="3" lean-forward="true" selection-start-line="231" selection-start-column="3" selection-end-line="231" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/soft/jdk1.8/src.zip!/java/text/DateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="338" column="46" lean-forward="true" selection-start-line="338" selection-start-column="46" selection-end-line="338" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/DateLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="136" column="27" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/HTMLLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/xml/XMLLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="202" column="50" selection-start-line="202" selection-start-column="50" selection-end-line="202" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/EnhancedPatternLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="555" column="20" lean-forward="true" selection-start-line="555" selection-start-column="20" selection-end-line="555" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/Layout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/FormattingInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/AbsoluteTimeDateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1102">
+          <caret line="43" column="63" lean-forward="true" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
+          <folding>
+            <element signature="e#2118#2119#0" expanded="true" />
+            <element signature="e#2171#2172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/LocationInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/PatternParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="57" column="52" lean-forward="true" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
+          <folding>
+            <element signature="e#12290#12291#0" expanded="true" />
+            <element signature="e#12319#12320#0" expanded="true" />
+            <element signature="e#15881#15882#0" expanded="true" />
+            <element signature="e#15927#15928#0" expanded="true" />
+            <element signature="e#21641#21642#0" expanded="true" />
+            <element signature="e#21717#21718#0" expanded="true" />
+            <element signature="e#21881#21882#0" expanded="true" />
+            <element signature="e#21937#21938#0" expanded="true" />
+            <element signature="e#21969#21970#0" expanded="true" />
+            <element signature="e#22021#22022#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/helpers/PatternConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="82" column="31" lean-forward="true" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/PatternLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="507" column="15" lean-forward="true" selection-start-line="507" selection-start-column="15" selection-end-line="507" selection-end-column="15" />
+          <folding>
+            <element signature="e#15361#15362#0" expanded="true" />
+            <element signature="e#15404#15405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/LoggingEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="667" column="47" selection-start-line="667" selection-start-column="47" selection-end-line="667" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ThrowableRendererSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/Hierarchy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="665" column="32" selection-start-line="665" selection-start-column="32" selection-end-line="665" selection-end-column="32" />
+          <folding>
+            <element signature="e#22015#22016#0" expanded="true" />
+            <element signature="e#22055#22056#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/PropertyConfigurator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="699" column="9" lean-forward="true" selection-start-line="699" selection-start-column="9" selection-end-line="699" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/LoggerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/spi/ThrowableInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="90" column="52" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/log4j/DefaultThrowableRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="78" column="32" lean-forward="true" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

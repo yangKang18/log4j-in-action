@@ -5,9 +5,9 @@
  * The ASF licenses this file to You under the Apache License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -19,11 +19,17 @@ package org.apache.log4j;
 
 import java.util.Vector;
 
+/**
+ * 备用节点，本身是一个集合
+ *
+ * 集合是子logger
+ *
+ */
 class ProvisionNode extends Vector {
-  private static final long serialVersionUID = -4479121426311014469L;
+    private static final long serialVersionUID = -4479121426311014469L;
 
-  ProvisionNode(Logger logger) {
-    super();
-    this.addElement(logger);
-  }
+    ProvisionNode(Logger logger) {
+        super();
+        this.addElement(logger);
+    }
 }
